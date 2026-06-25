@@ -1,0 +1,4 @@
+# 仅上传参赛 Skill 文件夹，忽略其他本地文件
+/*
+!liver-lesion-emr-extractor/
+!.gitignore
