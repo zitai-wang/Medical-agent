@@ -82,7 +82,7 @@
   },
 
   "tumor_markers": [
-    {"name": "甲胎蛋白(AFP)", "value": "55.95", "unit": "ng/mL", "ref_range": "0-8.1", "abnormal": "↑", "source_doc": "检验结果摘录"},
+    {"name": "甲胎蛋白(AFP)", "value": "55.95", "unit": "ng/mL", "ref_range": "0-8.1", "abnormal": "升高", "source_doc": "检验结果摘录"},
     {"name": "癌胚抗原(CEA)", "value": "1.14", "unit": "ng/mL", "ref_range": "0-5", "abnormal": "正常", "source_doc": "检验结果摘录"}
   ],
 
@@ -123,11 +123,11 @@
 
 | 键 | 含义 | 必填 |
 |----|------|------|
-| `value` | 标准化后的字段值；缺失填 `"未提及"` | ✅ |
-| `source_text` | 原文片段（支撑该值） | 有值时✅ |
-| `source_doc` | 来源文书类型 | 有值时✅ |
-| `confidence` | 映射/判定置信度 0-1（编码与分期字段） | 编码类✅ |
-| `match_level` | P0/P1/P2/P3（编码字段） | 编码类✅ |
+| `value` | 标准化后的字段值；缺失填 `"未提及"` | 是 |
+| `source_text` | 原文片段（支撑该值） | 有值时必填 |
+| `source_doc` | 来源文书类型 | 有值时必填 |
+| `confidence` | 映射/判定置信度 0-1（编码与分期字段） | 编码类必填 |
+| `match_level` | P0/P1/P2/P3（编码字段） | 编码类必填 |
 
 ## 输出顺序（强制）
 
